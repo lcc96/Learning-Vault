@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorldAgain
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string userName = "";
+            int userAge;
+            int currentYear = 0;
+
+            Console.Write("Please enter your name: ");
+            userName = Console.ReadLine();
+            Console.Write("Please enter your age: ");
+            userAge = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter the current year: ");
+            currentYear = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Hello World my name is {0}, I am {1} years old and I was born in year \n{2}!",userName, userAge, currentYear - userAge);
+            Console.ReadLine();
+
+
+        }
+    }
+}
